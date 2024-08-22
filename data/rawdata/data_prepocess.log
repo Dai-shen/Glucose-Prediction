@@ -1,0 +1,17 @@
+2023-08-07 00:30:02 开始数据预处理：002
+2023-08-07 00:58:35 002 已完成!
+2023-08-07 00:58:35 开始数据预处理：003
+Traceback (most recent call last):
+  File "/media/data1/daiyf/glucose-prediction/data/rawdata/preprocess.py", line 18, in <module>
+    main(arguments)
+  File "/media/data1/daiyf/glucose-prediction/data/rawdata/preprocess.py", line 12, in main
+    person.preprocess()
+  File "/media/data1/daiyf/glucose-prediction/data/rawdata/datapre.py", line 161, in preprocess
+    df = df.groupby('time_begin', as_index=False).sum()
+  File "/home/daiyf/.conda/envs/glucose/lib/python3.9/site-packages/pandas/core/frame.py", line 8252, in groupby
+    return DataFrameGroupBy(
+  File "/home/daiyf/.conda/envs/glucose/lib/python3.9/site-packages/pandas/core/groupby/groupby.py", line 931, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/daiyf/.conda/envs/glucose/lib/python3.9/site-packages/pandas/core/groupby/grouper.py", line 985, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'time_begin'
